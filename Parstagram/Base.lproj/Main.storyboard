@@ -69,7 +69,7 @@
                     <connections>
                         <outlet property="passwordField" destination="TIP-f1-O8l" id="Zvi-wS-6H1"/>
                         <outlet property="usernameField" destination="Qec-Iu-6r5" id="Egq-K2-0Af"/>
-                        <segue destination="nV2-2f-Nls" kind="presentation" identifier="loginSegue" id="QnQ-e4-gAq"/>
+                        <segue destination="nV2-2f-Nls" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="QnQ-e4-gAq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,7 +81,7 @@
             <objects>
                 <viewController id="zcU-D8-VlB" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iG1-b0-2S8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R2Z-rW-hOA">
@@ -208,10 +208,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nV2-2f-Nls" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aay-cK-IZ3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nuq-aI-jUk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="zcU-D8-VlB" kind="relationship" relationship="rootViewController" id="eo2-Za-IpI"/>
                     </connections>
